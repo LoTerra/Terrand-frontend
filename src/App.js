@@ -5,6 +5,7 @@ import { Link, Router } from 'components/Router'
 
 import './styles/base.scss'
 import Navbar from './components/Navbar'
+import LoadingScreen from './components/LoadingScreen'
 
 // Any routes that start with 'dynamic' will be treated as non-static routes
 addPrefetchExcludes(['dynamic'])
@@ -14,7 +15,7 @@ function App() {
     <Root>
       <Navbar/>
       <div className="content">
-        <React.Suspense fallback={<em>Loading...</em>}>
+        <React.Suspense fallback={<LoadingScreen/>}>
           <Router>            
             <Routes path="*" />
           </Router>
