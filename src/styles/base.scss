@@ -1,0 +1,16 @@
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins';
+
+$primary: #893976;
+$secondary: #C5C3C4;
+
+$theme-colors: (
+    primary: $primary,
+    secondary: $secondary, 
+);
+
+// (Required) Import Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+@import './main';
