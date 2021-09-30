@@ -7,15 +7,16 @@ import { CopyBlock, nord } from 'react-code-blocks'
 export default () => (
   <div className="container py-5">
     <div className="row mb-5">
-      <div className="col-md-8 text-center mx-auto">
+      <div className="col-md-8 text-center mx-auto intro">
         <img src="/hero.svg" className="img-fluid"/>
-        <p>Terrand is an oracle smart contract on Terra Luna to get distributed randomness beacon. Verifiable, unpredictable and unbiased random numbers as a service.</p>
+        <p>Terrand is an <strong>oracle</strong> smart contract on Terra Luna to get distributed randomness beacon. <strong>Verifiable, unpredictable and unbiased random numbers</strong> as a service.</p>
         <a className="btn btn-primary">Learn more</a>
       </div>      
     </div>
-    <div className="row py-5">
-      <div className="col-md-6">
-        <h2>Add randomness</h2>
+    <div className="row info-block">
+      <div className="col-md-6 d-flex">
+          <div className="align-self-center w-100">
+          <h2>Add randomness</h2>
         <p>{'You can get latest randomness from https://drand.cloudflare.com/public/latest or by round https://drand.cloudflare.com/public/{round}'}</p>
         <CopyBlock
        text={`{
@@ -32,12 +33,13 @@ export default () => (
        theme={nord}
        wrapLines
         />
+          </div>
       </div>
-      <div className="col-md-6">
-        
+      <div className="col-md-6 text-center">
+        <img src="/thumb.svg" className="img-fluid"/>
       </div>
     </div>
-    <div className="row py-5">      
+    <div className="row info-block">      
       <div className="col-md-6">
         
       </div>
