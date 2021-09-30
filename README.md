@@ -1,3 +1,3 @@
-# React-Static - Basic Template
+# Terrand 
 
-To use this template, run `react-static create` and use the `basic` template.
+To use this run yarn start
