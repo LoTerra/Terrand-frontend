@@ -1,5 +1,6 @@
 import React from 'react'
 import { CopyBlock, nord } from 'react-code-blocks'
+import Hero from '../components/Hero'
 
 
 
@@ -8,7 +9,7 @@ export default () => (
   <div className="container py-5">
     <div className="row mb-5">
       <div className="col-md-8 text-center mx-auto intro">
-        <img src="/hero.svg" className="img-fluid"/>
+        <Hero/>
         <p>Terrand is an <strong>oracle</strong> smart contract on Terra Luna to get distributed randomness beacon. <strong>Verifiable, unpredictable and unbiased random numbers</strong> as a service.</p>
         <a className="btn btn-primary">Learn more</a>
       </div>      
